@@ -1,13 +1,76 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav {
+  background: #1a1c22;
+}
+.landing {
+  background: #1a1c22;
+  height: 100vh;
+  padding: 13% 7%;
+}
+
+.h1font {
+  font-family: 'Concert One', cursive;
+}
+
+
+
+@media (max-width: 768px) {
+  .landing {
+    background-image: url("../public/Images/Lambo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bg {
+    background: #1a1c22;
+  }
+  
+  .CarImage {
+    display: none;
+  }
+  .md {
+    background: #3d3a50;
+    width: 95%;
+    padding: 1rem 1.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .bg {
+    background: #1a1c22;
+  }
+  .CarImage {
+    display: none;
+  }
+  .sec {
+    margin-top: -12%;
+    margin-left: 65%;
+  }
+}
+@media (max-width: 425px) {
+  .bg {
+    background: #1a1c22;
+  }
+
+  .sec {
+    margin-top: -19%;
+    margin-left: 65%;
+  }
+
+  .landing p{
+    font-size: 10px;
+  }
+  .CarImage {
+    display: none;
+  }
 }
