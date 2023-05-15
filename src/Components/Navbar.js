@@ -3,10 +3,10 @@ import React, { useState } from "react";
 function Navbar() {
   const Links = [
     { name: "Home", link: "/" },
-    { name: "Shop", link: "/" },
+    // { name: "Shop", link: "/" },
     { name: "About", link: "/" },
-    { name: "Accessories", link: "/" },
-    { name: "Offers", link: "/" },
+    // { name: "Accessories", link: "/" },
+    { name: "Contact Us", link: "/" },
     { name: "Brands", link: "/" },
   ];
   const [open,setOpen] = useState(false);

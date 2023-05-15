@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaStar } from 'react-icons/fa';
-import { BsStarHalf } from 'react-icons/bs';
-import { FiPhoneCall } from 'react-icons/fi';
+import { FaStar } from "react-icons/fa";
+import { BsStarHalf } from "react-icons/bs";
+// import { FiPhoneCall } from 'react-icons/fi';
 
 function Selection() {
   useEffect(() => {
@@ -178,23 +178,44 @@ function Selection() {
                 </h1>
                 <p className="text-sm font-semibold">{item.desc}</p>
                 <div className="flex justify-between">
-                    <p className="lg:text-lg sm:text-sm text-sm font-semibold">
+                  <p className="lg:text-lg sm:text-sm text-sm font-semibold">
                     {item.Price}
-                    </p>
-                    <div className="flex text-yellow-500">
-                        <FaStar /><FaStar /><FaStar /><FaStar /><BsStarHalf />
-                    </div>
+                  </p>
+                  <div className="flex text-yellow-500">
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <BsStarHalf />
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="speech text-center" data-aos="fade-up" >
+      <div className="speech text-center " data-aos="fade-up">
         <div className="bg">
-            <p className="text-lg font-medium">Excellent Service & Great Range of</p>
-            <h1 className="lg:text-7xl sm:text-6xl text-4xl mb-3 font-sans h1font">Leading Brand</h1>
-            <button className="bg-blue-500 py-3.5 px-10 flex mx-auto text-white font-medium"><FiPhoneCall className="mt-1 mr-2"/>(+234) 813 346 5785</button>
+          <p className="text-lg font-medium">
+            Excellent Service & Great Range of
+          </p>
+          <h1 className="lg:text-7xl sm:text-6xl text-4xl mb-1 font-sans h1font">
+            Leading Brand
+          </h1>
+          <p className="text-sm font-semibold py-3">
+            Get exclusive deals, new arrivals, and more.
+          </p>
+          <form action="" className="flex mx">
+            <input
+              type="text"
+              className="text border border-gray-300 rounded-md w-full px-7 mr-2 focus:outline-none focus:border-red-500"
+              placeholder="Enter email address"
+              required
+            />
+            <button type="submit" className="bg-red-500 lg:py-3.5 sm:py-3 py-2.5 lg:px-10 sm:px-8 px-6 flex cursor-pointer rounded-sm mx-auto text-white font-medium">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
     </div>

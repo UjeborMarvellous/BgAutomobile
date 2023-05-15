@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Categories from "./Categories";
+import Footer from "./Footer";
 import Selection from "./Selection";
+import AutoPlay from "./Slider";
 
 function LandingPage() {
   const imageDirectory = "./Images/";
@@ -50,6 +52,8 @@ function LandingPage() {
         </div>
         <Categories />
         <Selection />
+        <AutoPlay />
+        <Footer />
     </div>
   );
 }
