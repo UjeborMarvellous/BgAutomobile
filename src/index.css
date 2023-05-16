@@ -133,6 +133,9 @@
     height: 49vh;
     padding: 10% 0% 0% 0%;
   }
+  .md-flex {
+    height: 75vh;
+  }
 }
 @media (max-width: 640px) {
   .bg {
@@ -159,13 +162,7 @@
     height: 45vh;
     padding: 20% 0% 0% 0%;
   }
-
-  .icons {
-    background-image: url("../public/Images/Hight.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10% 0%;
-  }
+  
 
   .mr {
     margin-right: 0%;
